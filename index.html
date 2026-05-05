@@ -16,7 +16,7 @@ nav.scrolled{background:rgba(10,10,10,.95);padding:14px 40px;backdrop-filter:blu
 .urgency{background:var(--dark2);color:var(--gold);border-bottom:1px solid rgba(201,169,110,.3);text-align:center;padding:14px 20px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
 .hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#0d0d0d 0%,#1a1208 50%,#0d0d0d 100%);position:relative;overflow:hidden;padding:100px 40px 60px}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 70% 50%,rgba(201,169,110,.06) 0%,transparent 70%)}
-.hero-content{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1}
+.hero-content{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;flex-direction:row;align-items:center;gap:60px}
 .hero-tag{font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:12px}
 .hero-tag::before{content:'';width:40px;height:1px;background:var(--gold)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,8vw,7rem);font-weight:300;line-height:.9;margin-bottom:10px;color:var(--white)}
@@ -31,7 +31,7 @@ nav.scrolled{background:rgba(10,10,10,.95);padding:14px 40px;backdrop-filter:blu
 .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
 .hero-stats{display:flex;gap:50px;margin-top:60px;padding-top:40px;border-top:1px solid rgba(201,169,110,.15);flex-wrap:wrap}
 .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--gold);font-weight:300;line-height:1}
-.stat-label{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--text);margin-top:4px}
+.stat-label{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--text);margin-top:4px}.hero-image{flex:0 0 auto;width:clamp(280px,35%,480px);position:relative;align-self:stretch;display:flex;align-items:flex-end;justify-content:center}.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:2px;filter:brightness(.95) contrast(1.05)}.hero-text{flex:1}@media(max-width:900px){.hero-content{flex-direction:column}.hero-image{width:100%;height:400px;order:-1;margin-bottom:40px}}
 section{padding:100px 40px}.container{max-width:1200px;margin:0 auto}
 .section-tag{font-size:.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.8rem);font-weight:300;line-height:1.1;color:var(--white);margin-bottom:20px}
@@ -102,6 +102,7 @@ footer{background:var(--dark2);padding:60px 40px 30px;border-top:1px solid rgba(
 </style></head><body><nav id="nav"><a href="#" class="nav-logo"><img src="logo.png" alt="Oss Yoga" style="height:120px;width:auto;"></a><a href="#inscricao" class="nav-cta">Garantir Vaga</a></nav>
 <div class="urgency">⚡ 24 vagas presenciais — Janeiro 2027 · Inscrições abertas</div>
 <section class="hero" id="inicio"><div class="hero-content">
+<div class="hero-text">
 <div class="hero-tag">Método Oss Yoga · Brasil · 2027</div>
 <h1 class="hero-title">Aperfeiçoamento<br><span>Prático</span> em<br>Vinyasa Yoga</h1>
 <p class="hero-sub">Técnica, respiração, biomecânica e consciência — do praticante ao professor.</p>
@@ -112,7 +113,10 @@ footer{background:var(--dark2);padding:60px 40px 30px;border-top:1px solid rgba(
 <div class="stat"><div class="stat-num">100h</div><div class="stat-label">Carga Horária</div></div>
 <div class="stat"><div class="stat-num">30+</div><div class="stat-label">Anos de Docência</div></div>
 <div class="stat"><div class="stat-num">5k+</div><div class="stat-label">Alunos Formados</div></div>
-</div></div></section>
+</div>
+</div>
+<div class="hero-image"><img src="hero-yoga.jpg" alt="Instrutora de Yoga em postura de guerreiro" loading="eager"></div>
+</div></section>
 
 <section class="sobre" id="sobre"><div class="container"><div class="sobre-grid">
 <div class="sobre-text">
